@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Loan History</h2>
+<ul id="list"></ul>
+
+<script>
+let h = JSON.parse(localStorage.getItem("history")) || [];
+let ul = document.getElementById("list");
+h.forEach(i=>{
+  let li=document.createElement("li");
+  li.innerText=i;
+  ul.appendChild(li);
+});
+</script>
+
+</body>
+</html>

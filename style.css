@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  font-family: Arial;
+}
+
+.home, .login, .loan {
+  background: #1e90ff;
+  color: white;
+  height: 100vh;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
