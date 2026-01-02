@@ -1,11 +1,36 @@
-<!DOCTYPE html>
-<html>
 <body>
-<h2>Customer Details</h2>
-<input placeholder="Name">
-<input placeholder="Age">
-<input placeholder="Phone">
-<input placeholder="City">
-<button onclick="location.href='history.html'">Finish</button>
+<div class="overlay">
+  <div class="container">
+    <h2>Customer Details</h2>
+
+    <label>Full Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <label>Occupation:</label>
+    <input type="text" id="work"><br><br>
+
+    <label>PAN Number:</label>
+    <input type="text" id="pan"><br><br>
+
+    <label>ID Proof:</label>
+    <select id="idproof">
+      <option>Aadhaar</option>
+      <option>Voter ID</option>
+      <option>Driving License</option>
+    </select><br><br>
+
+    <label>City:</label>
+    <input type="text" id="city"><br><br>
+
+    <label>State:</label>
+    <input type="text" id="state"><br><br>
+
+    <button onclick="goToLoan()">Proceed to Loan</button>
+    <button onclick="history.back()">Back</button>
+  </div>
+</div>
 </body>
-</html>
+

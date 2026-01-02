@@ -26,3 +26,9 @@ function predictLoan() {
 
   localStorage.setItem("history", JSON.stringify(h));
 }
+if (approved) {
+  alert("Loan Approved!");
+  window.location.href = "rules.html";
+} else {
+  alert("Loan Rejected due to low score or income");
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Rules</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overlay">
+  <div class="container">
+    <h2>Loan Terms & Conditions</h2>
+
+    <ul>
+      <li>Loan approval is based on credit score.</li>
+      <li>False information leads to rejection.</li>
+      <li>EMI must be paid on time.</li>
+      <li>Interest rates may vary.</li>
+      <li>ID verification is mandatory.</li>
+    </ul>
+
+    <input type="checkbox" id="agree"> I agree to all terms<br><br>
+
+    <button onclick="acceptRules()">Accept & Continue</button>
+    <button onclick="history.back()">Back</button>
+  </div>
+</div>
+
+<script>
+function acceptRules() {
+  if (document.getElementById("agree").checked) {
+    window.location.href = "history.html";
+  } else {
+    alert("Please accept the rules to continue");
+  }
+}
+</script>
+
+</body>
+</html>
